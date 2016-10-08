@@ -3,7 +3,7 @@
     window.FAE = new Object();
   }
 
-  FAE.raw = 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/master/';
+  FAE.raw = 'https://raw.githubusercontent.com/egmezo/alfa.yoo7/master/';
   FAE.eGIF = 'http://illiweb.com/fa/empty.gif';
   FAE.delay = 1000;
   FAE.cp_lang = {};
@@ -165,7 +165,7 @@
               FAE.getUpdates();
 
             } else {
-              FAE.log(FAE.cp_lang.fae_update_good || 'Forumactif Edge is up to date!', 'color:#8B5;font-weight:bold;');
+              FAE.log(FAE.cp_lang.fae_update_good || 'Alfa script is up to date!', 'color:#8B5;font-weight:bold;');
               document.getElementById('fae_options').style.display = 'block';
             }
           });
@@ -224,15 +224,15 @@
             return alert(FAE.cp_lang.fae_translate_same ? FAE.parse_vars(FAE.cp_lang.fae_translate_same, {
               '{LANG}' : selected.innerHTML
 
-            }) : 'Forumactif Edge is already in ' + selected.innerHTML + '. Please choose another language.');
+            }) : 'Alfa script is already in ' + selected.innerHTML + '. Please choose another language.');
           }
 
           if (confirm(FAE.cp_lang.fae_translate_warning ? FAE.parse_vars(FAE.cp_lang.fae_translate_warning, {
             '{LANG}' : selected.innerHTML
 
-          }) : 'Are you sure you want to change the language of Forumactif Edge to ' + selected.innerHTML + ' ?')) {
+          }) : 'Are you sure you want to change the language of Alfa script to ' + selected.innerHTML + ' ?')) {
 
-            FAE.log(FAE.cp_lang.fae_translate_start || 'Translation of Forumactif Edge will commence shortly. Please wait..');
+            FAE.log(FAE.cp_lang.fae_translate_start || 'Translation of Alfa script will commence shortly. Please wait..');
             FAE.log(FAE.cp_lang.fae_translate_get ? FAE.parse_vars(FAE.cp_lang.fae_translate_get, {
               '{LANG}' : current.innerHTML
 
@@ -265,7 +265,7 @@
         // create and insert general settings
         $(opts).append('<div class="fae_cp_title clear" style="margin-top:24px;">General Settings</div>'+
 
-          '<p id="fae_gen_desc">This section allows you to manage the general settings of Forumactif Edge.</p>'+
+          '<p id="fae_gen_desc">This section allows you to manage the general settings of Alfa script.</p>'+
 
           '<div class="fae_cp_row">'+
             '<span class="fae_help_me">?'+
@@ -446,7 +446,7 @@
         // create and insert the theme switcher
         $(opts).append('<div class="fae_cp_title clear" style="margin-top:24px;">Theme Management</div>'+
 
-          '<p id="fae_theme_desc">This section allows you to manage the default theme and colors for Forumactif Edge by importing a new theme from the Github repository.</p>'+
+          '<p id="fae_theme_desc">This section allows you to manage the default theme and colors for Alfa script by importing a new theme from the Github repository.</p>'+
 
           '<div class="fae_cp_row">'+
             '<span class="fae_help_me">?'+
@@ -680,10 +680,10 @@
       }
 
     } else if (/page_html\?mode=preview/.test(window.location.href)) {
-      FAE.log(FAE.cp_lang.fae_err_no_preview || 'The Forumactif Edge Control Panel cannot be used in preview mode. Please go to Admin Panel > Modules > HTML pages management and click the magnifying glass (<img src="http://illiweb.com/fa/admin/icones/voir.png" style="vertical-align:middle;"/>) for this page once you\'ve saved it.', 'color:#E53;font-weight:bold;');
+      FAE.log(FAE.cp_lang.fae_err_no_preview || 'The Alfa script Control Panel cannot be used in preview mode. Please go to Admin Panel > Modules > HTML pages management and click the magnifying glass (<img src="http://illiweb.com/fa/admin/icones/voir.png" style="vertical-align:middle;"/>) for this page once you\'ve saved it.', 'color:#E53;font-weight:bold;');
 
     } else {
-      FAE.log(FAE.cp_lang.fae_err_not_founder || 'Only <a href="/u1">the founder</a> may use this control panel. Please contact them for assistance in installing Forumactif Edge.', 'color:#E53;font-weight:bold;');
+      FAE.log(FAE.cp_lang.fae_err_not_founder || 'Only <a href="/u1">the founder</a> may use this control panel. Please contact them for assistance in installing Alfa script.', 'color:#E53;font-weight:bold;');
     }
   });
 
